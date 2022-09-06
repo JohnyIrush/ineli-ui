@@ -8,8 +8,9 @@
  <tele-port v-if="false" />
  <ref v-if="false" />
  <mixin-reusability v-if="false" />
- <composition-api />
+ <composition-api v-if="false" />
  <reactivity-to-refs v-if="false"  />
+ <ui />
 </template>
 
 <script >
@@ -24,6 +25,7 @@ import Ref from './components/Ref.vue'
 import MixinReusability from './components/MixinReusability.vue'
 import CompositionApi from './components/CompositionApi.vue'
 import ReactivityToRefs from './components/ReactivityToRefs.vue'
+import Ui from './ui/Ui.vue'
 
 export default{
   watch: {
@@ -41,7 +43,8 @@ export default{
     Ref,
     MixinReusability,
     CompositionApi,
-    ReactivityToRefs
+    ReactivityToRefs,
+    Ui
   },
   data() {
     return {
